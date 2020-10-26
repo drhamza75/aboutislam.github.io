@@ -1,0 +1,67 @@
+*
+{
+    margin:0;
+    padding:0;
+}
+.container
+{
+    height: 100vh;
+    width: 100%;
+    background-size: 100% 100%;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("./img/sidik-kurniawan-hiFpJqA4FcE-unsplash.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container h1
+{
+    width:44%;
+    height:10vh;
+    /* border-right:2px solid red; */
+    color:grey;
+    font-size: 28px;
+    animation: move 5s infinite steps(26);
+    white-space: nowrap;
+overflow: hidden;    
+}
+@keyframes move 
+{
+    from{width:0ch;}
+    to{width:26ch;}
+}
+.empty
+{
+    height: 20vh;
+    width: 40%;
+}
+.container nav
+{
+    width:90%;
+    height:10vh;
+    border:3px solid pink;
+}
+nav ul
+{
+    display: flex;
+    /* flex-direction: c; */
+    justify-content: space-evenly;
+    padding-top: 10px;
+    font-size: 24px;
+    color:white;
+    list-style: none;
+}
+nav ul li a
+{
+    padding:5px 9px;
+}
+
+nav ul li a:hover
+{
+    cursor: pointer;
+    background-color:lavenderblush;
+    color: black;
+    transition-duration: 0.5s;
+    border-radius: 10px;
+    position: relative;
+}
